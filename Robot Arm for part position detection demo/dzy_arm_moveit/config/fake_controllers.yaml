@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_arm_dzy_controller
+    type: $(arg execution_type)
+    joints:
+      - base_25a
+      - a25_arm1
+      - arm1_20a
+      - a20_arm2
+      - arm2_14a
+      - a14_adapter
+      - pin_tou
+initial:  # Define initial robot poses.
+  - group: arm_dzy
+    pose: home

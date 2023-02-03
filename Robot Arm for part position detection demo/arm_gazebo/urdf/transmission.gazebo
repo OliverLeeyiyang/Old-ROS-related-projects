@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!--  base_25a   -->
+    <transmission name="base_25a">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="base_25a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="base_25a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  a25_arm1   -->
+    <transmission name="a25_arm1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="a25_arm1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="a25_arm1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  arm1_20a   -->
+    <transmission name="arm1_20a">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm1_20a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="arm1_20a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  a20_arm2   -->
+    <transmission name="a20_arm2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="a20_arm2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="a20_arm2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  arm2_14a   -->
+    <transmission name="arm2_14a">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm2_14a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="arm2_14a">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  a14_adapter   -->
+    <transmission name="a14_adapter">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="a14_adapter">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="a14_adapter">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!--  pin_tou   -->
+    <transmission name="pin_tou">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="pin_tou">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="pin_tou">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+</robot>

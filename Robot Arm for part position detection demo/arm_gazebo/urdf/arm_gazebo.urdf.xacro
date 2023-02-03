@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="dzy_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Included robot urdf Files -->
+    <xacro:include filename="$(find dzy_arm)/urdf/dzy_arm.xacro" />
+    <xacro:arm/>
+    <xacro:include filename="$(find dzy_arm)/urdf/part.xacro"/>
+    <xacro:part/>
+
+    <!-- Included Gazebo parameters -->
+    <xacro:include filename="$(find arm_gazebo)/urdf/arm.gazebo" />
+    <xacro:include filename="$(find arm_gazebo)/urdf/transmission.gazebo" />
+
+</robot>

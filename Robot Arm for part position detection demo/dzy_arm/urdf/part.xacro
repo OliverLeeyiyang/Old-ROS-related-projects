@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dzy_arm">
+
+<!--macro for peijian description -->
+  <xacro:macro name="part">
+
+  <link
+    name="part">
+    <inertial>
+      <origin
+        xyz="-0.01046 0.00208 0.03129"
+        rpy="0 0 0" />
+      <mass
+        value="5" />
+      <inertia
+        ixx="0.037555"
+        ixy="2.5734E-05"
+        ixz="5.8111E-05"
+        iyy="0.07414"
+        iyz="-8.9414E-06"
+        izz="0.11041" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dzy_arm/meshes/part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dzy_arm/meshes/part.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="base_to_part"
+    type="fixed">
+    <origin
+      xyz="0.01 0.125 0.04"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="part" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  </xacro:macro>
+</robot>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<robot name="dzy_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/arm</robotNamespace>
+    </plugin>
+  </gazebo>
+
+
+<!--    part        -->
+  <gazebo reference="part">
+     <material>Gazebo/Blue</material>
+  </gazebo>
+
+<!--    dizuo        -->
+  <gazebo reference="base_link">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_base        -->
+  <gazebo reference="arm_base">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_25a        -->
+  <gazebo reference="arm_25a">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_arm1        -->
+  <gazebo reference="arm_arm1">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_20a        -->
+  <gazebo reference="arm_20a">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_arm2        -->
+  <gazebo reference="arm_arm2">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_14a        -->
+  <gazebo reference="arm_14a">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    arm_adapter        -->
+  <gazebo reference="arm_adapter">
+     <material>Gazebo/Grey</material>
+  </gazebo>
+
+<!--    pin        -->
+  <gazebo reference="pin">
+     <material>Gazebo/Black</material>
+  </gazebo>
+
+<!--    tou        -->
+  <gazebo reference="tou">
+     <material>Gazebo/Yellow</material>
+  </gazebo>
+
+</robot>
