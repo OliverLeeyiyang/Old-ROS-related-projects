@@ -10,6 +10,8 @@
     (a) robot arm painting controlled by ros and moveit
     (b) map generation using hdl slam algorithmus pkg and velodyne.
     
+    ![12 06 3 mp4_20211206_215844016](https://user-images.githubusercontent.com/97108973/216655787-86bf2a2b-2898-4460-ac96-5dd7037335d6.jpg)
+    
     elfin_robot: https://github.com/hans-robot/elfin_robot
     hdl: https://github.com/analogdevicesinc/hdl
     velodyne: https://github.com/lmark1/velodyne_simulator
@@ -17,7 +19,7 @@
     Controlling codes are written in Python 2.
     Link including video, rosbagsfor hdl and rospkgs of the project.
     https://syncandshare.lrz.de/getlink/fi6SsGariETFCTvdHCwm2U/
-    ![12 06 3 mp4_20211206_215844016](https://user-images.githubusercontent.com/97108973/216655787-86bf2a2b-2898-4460-ac96-5dd7037335d6.jpg)
+    
 
     
 (3) Excavator simulation
