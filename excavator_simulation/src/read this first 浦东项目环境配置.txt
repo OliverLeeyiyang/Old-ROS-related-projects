@@ -1,0 +1,34 @@
+1.
+sudo apt-get install ros-melodic-teleop-twist-keyboard 
+sudo apt-get install ros-melodic-tf2-*
+sudo apt-get install ros-melodic-trac-ik-kinematics-plugin
+sudo apt-get install ros-melodic-joint-trajectory-controller
+sudo apt-get install ros-melodic-catkin python-catkin-tools
+sudo apt-get install ros-melodic-moveit
+
+
+2.LIO-SAM这个如果暂时不用，可以删了不编译，因为这个包里没包含gtsam4.0.2
+
+3.
+$ cd ~/catkin_ws/src
+$ chmod +x environment_setup.sh
+$ bash environment_setup.sh
+$ cd ~/catkin_ws
+$ catkin_make
+
+
+4.运行
+运行这个脚本可以生成基本模型，可以先测试一下
+$ cd ~/catkin_ws/src/pudong_gazebo/launch/sh
+$ chmod +x nav_demo.sh
+$ bash nav_demo.sh
+
+
+IMU配置文件
+~/catkin_ws/src/pudong/urdf/IMU.xacro
+
+配置完，打开
+~/catkin_ws/src/pudong_gazebo/urdf/pudong_gazebo.urdf.xacro
+取消倒数五六行对IMU的注释，删除两侧的<!-- -->
+
+

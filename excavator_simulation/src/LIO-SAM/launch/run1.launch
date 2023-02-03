@@ -1,0 +1,23 @@
+<launch>
+
+    <arg name="project" default="lio_sam"/>
+
+    <node
+      name="map_to_odom"
+      pkg="tf"
+      type="static_transform_publisher"
+      args="0 0 0 0 0 0 map odom 40" />
+    
+    <!-- Parameters -->
+    <rosparam file="$(find lio_sam)/config/params1.yaml" command="load" />
+
+    <!--- LOAM -->
+    <include file="$(find lio_sam)/launch/include/module_loam.launch" />
+
+    <!--- Run Navsat -->
+    <include file="$(find lio_sam)/launch/include/module_navsat.launch" />
+
+    <!--- Run Rviz-->
+    <include file="$(find lio_sam)/launch/include/module_rviz.launch" />
+
+</launch>
