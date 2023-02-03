@@ -10,8 +10,6 @@
     (a) robot arm painting controlled by ros and moveit
     (b) map generation using hdl slam algorithmus pkg and velodyne.
     
-    ![12 06 3 mp4_20211206_215844016](https://user-images.githubusercontent.com/97108973/216655787-86bf2a2b-2898-4460-ac96-5dd7037335d6.jpg)
-    
     elfin_robot: https://github.com/hans-robot/elfin_robot
     hdl: https://github.com/analogdevicesinc/hdl
     velodyne: https://github.com/lmark1/velodyne_simulator
