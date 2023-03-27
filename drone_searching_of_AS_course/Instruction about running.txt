@@ -1,0 +1,32 @@
+1. clone the repo
+https://github.com/TUM-AAS/autsys-projects-gkd.git
+
+2. Delete folders with name:
+	catkin_simple, eigen_catkin, eigen_checks, glog_catkin, mav_comm, mav_trajectory_generation,
+	nplot, yamml_cpp_catkin
+
+3. Locate to /src, then run the codes below row by row in a terminal
+#############################################
+git init
+
+git submodule add https://github.com/ethz-asl/mav_comm.git
+git submodule add https://github.com/ethz-asl/mav_trajectory_generation.git
+git submodule add https://github.com/ethz-asl/eigen_catkin.git
+git submodule add https://github.com/ethz-asl/eigen_checks.git
+git submodule add https://github.com/catkin/catkin_simple.git
+git submodule add https://github.com/ethz-asl/glog_catkin.git
+git submodule add https://github.com/ethz-asl/nlopt.git
+git submodule add https://github.com/ethz-asl/yaml_cpp_catkin.git
+
+git submodule init
+git submodule update
+
+cd ..
+catkin build
+#############################################
+
+4. After catkin build, launch the following launch files in different terminals
+roslaunch unity_bridge unity_sim.launch
+roslaunch basic_waypoint_pkg waypoint_mission.launch
+
+5. Our codes are mainly in /src/basic_waypoint_pkg/src/victims_searching.cc
